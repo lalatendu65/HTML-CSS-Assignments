@@ -5,3 +5,108 @@
 width: 100%;
 height: 100%;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 15px;
+    background: seagreen;
+    color: #333;
+    background-image: url();
+}
+
+main {
+    width: 90%;
+    max-width: 70rem;
+    min-height: 15rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+.form {
+    padding: 1rem;
+}
+
+.form,
+.form>* {
+    border-radius: 1rem;
+}
+
+.info {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info>span {
+    color: #000;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 20rem;
+    padding: 1.5rem;
+    color: seagreen;
+    font-family: inherit;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    border: 1px solid #42CFF2;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.8rem;
+    background: linear-gradient(118deg, #42CFF2, #4A66F3);
+    color: #fff;
+    overflow: hidden;
+    transition: 0.5s linear;
+    position: relative;
+}
+
+.btn-icon {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    font-size: 3rem;
+    display: inline-block;
+    transform: rotate(300deg) translate(-150%, 50%);
+}
+
+.btn:focus .btn-icon {
+    animation: btn 2s linear forwards;
+}
+
+.thread-box {
+    min-height: 5rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.thread {
+    min-height: 5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.75rem;
+    background: #FAFDFE;
+}
